@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact – Out The Box Entertainment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+      background: #fff;
+    }
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin: 12px 0 6px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    textarea {
+      min-height: 140px;
+    }
+    button {
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      margin-top: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Contact Out The Box Entertainment</h2>
+    <p>Please complete the form below and our team will get back to you within 24 hours.</p>
+
+    <form
+      action="https://submit-form.com/98yVKA96g"
+      method="POST"
+      data-botpoison-public-key="pk_e63afbd6-c132-4d83-98a5-40bcc2bf0f4c"
+    >
+      <label for="name">Name *</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" />
+
+      <label for="subject">Subject / Reason for Contact</label>
+      <input id="subject" name="subject" type="text" />
+
+      <label for="message">Message *</label>
+      <textarea
+        id="message"
+        name="message"
+        required
+        placeholder="Tell us how we can help..."
+      ></textarea>
+
+      <!-- Redirect to your Thank You page after successful submission -->
+      <input type="hidden" name="_redirect" value="https://outtheboxent.com/thank-you" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
