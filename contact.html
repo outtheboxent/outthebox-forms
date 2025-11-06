@@ -1,150 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact – Out The Box Entertainment</title>
+<form
+  action="https://submit-form.com/98yVKA96g"
+  method="POST"
+  data-botpoison-public-key="pk_e63afbd6-c132-4d83-98a5-40bcc2bf0f4c"
+>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Name" required />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Email" required />
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #1B1B1B; /* dark background */
-      color: #E9E8D5; /* cream text */
-      margin: 0;
-      padding: 40px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-    }
+  <label for="phone">Phone</label>
+  <input type="tel" id="phone" name="phone" placeholder="Phone" />
 
-    .wrap {
-      background-color: #222;
-      padding: 40px;
-      border-radius: 12px;
-      max-width: 640px;
-      width: 100%;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    }
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" placeholder="Subject" />
 
-    h1 {
-      text-align: center;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #E9E8D5;
-      font-size: 1.8rem;
-    }
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Message" required></textarea>
 
-    p {
-      text-align: center;
-      color: #BEBDAE;
-      margin-bottom: 30px;
-      font-size: 1rem;
-    }
+  <!-- Redirect to thank-you page -->
+  <input type="hidden" name="_redirect" value="https://outtheboxent.github.io/outthebox-forms/thank-you.html" />
 
-    label {
-      display: block;
-      font-weight: 500;
-      color: #E9E8D5;
-      margin-bottom: 6px;
-      margin-top: 18px;
-      font-size: 0.95rem;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      font-size: 1rem;
-      border: 1px solid #3A3A3A;
-      border-radius: 10px;
-      background-color: #2A2A2A;
-      color: #E9E8D5;
-      box-sizing: border-box;
-      transition: border-color 0.3s, background-color 0.3s;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: #E9E8D5;
-      outline: none;
-      background-color: #262626;
-    }
-
-    textarea {
-      min-height: 140px;
-      resize: vertical;
-    }
-
-    ::placeholder {
-      color: #9DA18E;
-    }
-
-    button {
-      margin-top: 24px;
-      width: 100%;
-      background-color: #E9E8D5;
-      color: #1B1B1B;
-      border: none;
-      border-radius: 10px;
-      padding: 14px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #D6D5C3;
-      transform: translateY(-2px);
-    }
-
-    button:active {
-      transform: translateY(0);
-    }
-
-    @media (max-width: 600px) {
-      .wrap {
-        padding: 24px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wrap">
-    <h1>Contact Out The Box Entertainment</h1>
-    <p>Please complete the form below and our team will get back to you within 24 hours.</p>
-
-    <form
-      action="https://submit-form.com/98yVKA96g"
-      method="POST"
-      data-botpoison-public-key="pk_e63afbd6-c132-4d83-98a5-40bcc2bf0f4c"
-      aria-label="Contact form"
-    >
-      <label for="name">Name *</label>
-      <input id="name" name="name" type="text" required placeholder="Enter your name">
-
-      <label for="phone">Phone</label>
-      <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555">
-
-      <label for="email">Email Address *</label>
-      <input id="email" name="email" type="email" required placeholder="you@example.com">
-
-      <label for="subject">Subject *</label>
-      <input id="subject" name="subject" type="text" required placeholder="Reason for contact">
-
-      <label for="message">Message *</label>
-      <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
-
-      <!-- Redirect after submission -->
-      <input type="hidden" name="_redirect" value="https://outtheboxent.github.io/outthebox-forms/thank-you.html">
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</body>
-</html>
+  <button type="submit">Send Message</button>
+</form>
