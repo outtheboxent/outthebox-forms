@@ -7,7 +7,7 @@
 </head>
 <body>
   <form
-    action="https://submit-form.com/98yVKA96g"
+    action="https://submit-form.com/cyNGpZSci"
     method="POST"
   >
     <label for="name">Name</label>
@@ -25,7 +25,10 @@
     <label for="message">Message</label>
     <textarea id="message" name="message" placeholder="Message" required></textarea>
 
-    <!-- Redirect to thank-you page -->
+    <!-- Add metadata for email notifications -->
+    <input type="hidden" name="_email.from" value="Out The Box Entertainment Website" />
+
+    <!-- Redirect to Thank You page after submission -->
     <input type="hidden" name="_redirect" value="https://outtheboxent.github.io/outthebox-forms/thank-you.html" />
 
     <button type="submit">Send Message</button>
