@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking Inquiry – Out The Box Entertainment</title>
+
+  <style>
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background-color: #1b1b1b;
+      color: #e8e6d9;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #222;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #f3f2e9;
+    }
+
+    p {
+      text-align: center;
+      color: #bdbcae;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      color: #f1f0e7;
+      margin-bottom: 6px;
+      margin-top: 18px;
+      font-size: 0.95rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #444;
+      border-radius: 8px;
+      background-color: #2c2c2c;
+      color: #e8e6d9;
+      box-sizing: border-box;
+      transition: border-color 0.3s, background-color 0.3s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #d6d1b1;
+      background-color: #333;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 28px;
+      width: 100%;
+      background-color: #d6d1b1;
+      color: #111;
+      border: none;
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e8e6d9;
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Booking Inquiry</h2>
+    <p>Please provide your event details below, and our team will respond within 24 hours.</p>
+
+    <form
+      action="https://submit-form.com/B33utoITF"
+      method="POST"
+      data-botpoison-public-key="pk_db070494-a379-4235-a81d-c161571586fe"
+    >
+      <!-- Contact Details -->
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" placeholder="Full Name" required />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="Email Address" required />
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" />
+
+      <label for="company">Company / Organization</label>
+      <input type="text" id="company" name="company" placeholder="Optional" />
+
+      <!-- Event Details -->
+      <label for="date">Event Date *</label>
+      <input type="date" id="date" name="event_date" required />
+
+      <label for="time">Event Time</label>
+      <input type="time" id="time" name="event_time" />
+
+      <label for="venue">Venue Name & Address *</label>
+      <input type="text" id="venue" name="venue" placeholder="Venue or Location" required />
+
+      <label for="event_type">Event Type</label>
+      <select id="event_type" name="event_type">
+        <option value="">Select one</option>
+        <option>Wedding</option>
+        <option>Corporate Event</option>
+        <option>Private Party</option>
+        <option>Restaurant / Lounge</option>
+        <option>Other</option>
+      </select>
+
+      <label for="guests">Estimated Number of Guests</label>
+      <input type="number" id="guests" name="guest_count" min="1" placeholder="Approximate guest count" />
+
+      <label for="performance_type">Preferred Act Type</label>
+      <select id="performance_type" name="performance_type">
+        <option value="">Select one</option>
+        <option>DJ</option>
+        <option>Solo Musician</option>
+        <option>Duo</option>
+        <option>Trio</option>
+        <option>Full Band</option>
+      </select>
+
+      <label for="duration">Performance Duration</label>
+      <select id="duration" name="performance_duration">
+        <option value="">Select one</option>
+        <option>1 hour</option>
+        <option>2 hours</option>
+        <option>3 hours</option>
+        <option>4+ hours</option>
+      </select>
+
+      <label for="budget">Budget Range</label>
+      <input type="text" id="budget" name="budget" placeholder="Example: $500–$1000" />
+
+      <label for="notes">Additional Notes or Requests</label>
+      <textarea id="notes" name="notes" placeholder="Please include any specific requests or details..."></textarea>
+
+      <!-- Metadata for email notifications -->
+      <input type="hidden" name="_email.from" value="Out The Box Entertainment Website – Booking Inquiry" />
+
+      <!-- Redirect after submission -->
+      <input type="hidden" name="_redirect" value="https://outtheboxent.github.io/outthebox-forms/thank-you.html" />
+
+      <button type="submit">Submit Booking Inquiry</button>
+    </form>
+  </div>
+
+  <!-- Botpoison script -->
+  <script src="https://unpkg.com/@botpoison/browser" async></script>
+</body>
+</html>
